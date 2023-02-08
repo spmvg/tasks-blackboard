@@ -1,0 +1,7 @@
+This is a list of tasks for demo purposes.
+
+New tasks appear at the top-left corner
+Tasks can be moved
+Tasks get a color automatically
+The color depends on the horizontal location
+The brightness depends on the vertical location

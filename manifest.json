@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Tasks Blackboard",
+  "description": "Tasks Blackboard",
+  "version": "1.0",
+  "action": {
+    "default_title": "Tasks Blackboard",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["content-script.js"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
